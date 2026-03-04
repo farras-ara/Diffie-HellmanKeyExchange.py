@@ -28,7 +28,7 @@ def generate_step_by_step_dh():
     
     print(f"[STEP 3] Penghitungan Public Key:")
     print(f"  - Public Key Yara (A = g^a mod p): {Yara_public}")
-    print(f"  - Public Key Bima (B = g^b mod p)  : {Bima_public}\n")
+    print(f"  - Public Key Bima (B = g^b mod p): {Bima_public}\n")
     time.sleep(1.5)
 
     print(f"[STEP 4] Simulasi Pertukaran Kunci")
@@ -41,7 +41,7 @@ def generate_step_by_step_dh():
     
     print(f"[STEP 5] Penghitungan Shared Secret:")
     print(f"  - Yara menghitung (B^a mod p): {Bima_public}^{Yara_private} mod {p} = {Yara_shared_secret}")
-    print(f"  - Bima menghitung (A^b mod p)  : {Yara_public}^{Bima_private} mod {p} = {Bima_shared_secret}\n")
+    print(f"  - Bima menghitung (A^b mod p): {Yara_public}^{Bima_private} mod {p} = {Bima_shared_secret}\n")
     time.sleep(1.5)
 
     print("---------------------------------------------------------")
